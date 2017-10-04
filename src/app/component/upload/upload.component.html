@@ -1,0 +1,8 @@
+  <form #f="ngForm" (ngSubmit)="onSubmit(f)" enctype="multipart/form-data">
+    <input type="text" [(ngModel)]="name" name="name"/>
+    <input type="file" [(ngModel)]="myFile" name="myFile" (change)="fileChange($event)"/>
+    <button type="submit">Submit</button>
+  </form>
+
+
+

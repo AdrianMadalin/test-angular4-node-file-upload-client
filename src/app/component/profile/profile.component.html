@@ -1,0 +1,14 @@
+<div *ngIf="user; else other_content">
+  <h2 class="page-header">{{user.name}}</h2>
+  <ul class="list-group">
+    <li class="list-group-item">Username: {{user.username}}</li>
+    <li class="list-group-item">Email: {{user.email}}</li>
+  </ul>
+</div>
+
+<ng-template #other_content>
+  <div>
+    <h3 class="page-header">Need to be logged in first</h3>
+  </div>
+</ng-template>
+
